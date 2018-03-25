@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-
 class CreateCarsTable extends Migration
 {
     /**
@@ -14,9 +13,12 @@ class CreateCarsTable extends Migration
     public function up()
     {
         Schema::create('cars', function (Blueprint $table) {
+            $table->increments('id');
             $table->string('Make');
             $table->string('Model');
-            $table->integer('Year');
+            $table->string('Year');
+            $table->timestamps();
+
         });
     }
 
