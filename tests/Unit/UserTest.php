@@ -13,7 +13,7 @@ class UserTest extends TestCase
      *
      * @return void
      */
-    public function testAddUser()
+  /*  public function testAddUser()
     {
         $user= new User();
         $user->name = 'Ms Kristine Mehta';
@@ -21,5 +21,18 @@ class UserTest extends TestCase
         $user->password= '1234km';
      //   $user->remembertoken= 'null';
         $this->assertTrue($user->save());
+    }*/
+
+    public function testUpdateUser()
+    {
+        $user = User::find(52);
+        $user= new User();
+        $user->name = 'Steve Smith';
+        $user->email = 'km@gmail.com';
+        $user->password= '1234km';
+        $user->save();
+        $this->assertTrue($user->update());
+
     }
+
 }
