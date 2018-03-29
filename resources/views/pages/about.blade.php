@@ -1,8 +1,8 @@
-@extends('layouts.app')
-@section('content')
+    @extends('layouts.app')
+    @section('content')
 
 
-    <h1>About Page</h1>
+        <h1>About Page</h1>
     <p>Move over, sedans and compact cars: SUVs can be fuel-friendly,<br>
         too! Check out this list of SUVs with great gas mileage numbers.<br>
         What is the right car for you to buy in 2018? It might not be a 2018 model!<br>
