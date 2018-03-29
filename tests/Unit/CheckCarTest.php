@@ -24,5 +24,5 @@ class CheckCarTest extends TestCase
         $car = Car::find(1);
         $this->assertContains($car->Make, ["Honda", "Ford", "Toyota"]);
     }
-   
+
 }
